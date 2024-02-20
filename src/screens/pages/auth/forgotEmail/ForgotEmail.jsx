@@ -1,9 +1,15 @@
 import React from 'react'
+import DefaultRadioCheckbox from '../../../components/DefaultRadioCheckbox/DefaultRadioCheckbox'
+import { useNavigate } from 'react-router-dom';
 
 function ForgotEmailPass() {
+    const Navigate = useNavigate();
     return (
         <>
-            <div className=''>
+            <div>
+                <DefaultRadioCheckbox />
+            </div>
+            <div className='mt-5'>
                 We will send you an email with instructions on how to reset your password.
             </div>
             <div className='mt-5'>
@@ -13,6 +19,9 @@ function ForgotEmailPass() {
                 <button className='bg-blue-600 h-12 rounded  w-full text-center text-white'>
                     Email Me
                 </button>
+            </div>
+            <div className='mt-5' >
+                <p className='text-blue-600  cursor-pointer hover:underline' onClick={() => Navigate('/auth/forgotform')}>I can't remember my email address or phone number.</p>
             </div>
         </>
 

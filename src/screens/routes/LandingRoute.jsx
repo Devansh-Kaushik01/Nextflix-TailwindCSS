@@ -1,12 +1,12 @@
 import React from 'react'
-import Banner from '../pages/main/banner/Banner'
+import LandingPage from '../pages/main/landingPage/LandingPage'
 import { Outlet } from 'react-router-dom'
 
 function LandingRoute() {
   return (
     <>
       <div>
-        <Banner/>
+       <LandingPage/>
     </div>
     </>
   

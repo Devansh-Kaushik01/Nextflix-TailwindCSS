@@ -107,11 +107,9 @@ function Banner() {
                     </div>
                 </div>
             </div>
-
             <div className=' bg-black '>
                 <Footer />
             </div>
-
         </div>
     )
 }
